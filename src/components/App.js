@@ -12,7 +12,7 @@ let [textAreaValue,useTextAreaValue]=useState("");
     
     <div id="main">
       <input id="input" value={text} onChange={(e)=>{useText(e.target.value)}}></input><br/>
-      <PortalButton buttonclick={()=>{useTextAreaValue(text)}} /><br/>
+      <PortalButton buttonclick={()=>{useTextAreaValue(text)}}/>
       <PortalTextArea value={textAreaValue}/>
     </div>
   )
