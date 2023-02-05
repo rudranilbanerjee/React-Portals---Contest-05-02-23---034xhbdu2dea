@@ -2,9 +2,9 @@ import React from 'react';
 import  ReactDOM  from 'react-dom';
 
 //complete this function using portals
-const PortalButton=()=>{
+const PortalButton=(params)=>{
    return ReactDOM.createPortal(
-          <button id="button" onClick={}>Click</button>
+          <button id="button" onClick={params.buttonclick}>Click</button>
           ,
           document.getElementById('portal-button');
     )
