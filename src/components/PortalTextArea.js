@@ -2,11 +2,11 @@ import React from 'react';
 import  ReactDOM  from 'react-dom';
 
 //complete this function using portals
-const PortalTextArea=()=>{
-    return (
-        <div>
-            <textarea id="textarea" value={}></textarea>
-        </div>
+const PortalTextArea=(param)=>{
+    return ReactDOM.createPortal(
+            <textarea id="textarea" value={param.value}></textarea>
+           ,
+           document.getElementById('portal-textarea');
     )
 }
 export default PortalTextArea;
